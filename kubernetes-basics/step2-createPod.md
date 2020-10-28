@@ -1,3 +1,4 @@
+
 ## Creating a Pod
 
 Create a nginx pod using kubectl command.  This command will create a pod named 'nginx' using nginx docker image.
