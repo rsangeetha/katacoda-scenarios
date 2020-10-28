@@ -1,5 +1,5 @@
-##Listing all running Pod
+## Listing all running Pod
 
 To list all running pod using kubectl command
 
-`kubectl get pods` {{execute}}
+`kubectl get pods`{{execute}}
