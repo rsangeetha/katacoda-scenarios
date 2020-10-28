@@ -6,12 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Step 1 - List all running Pods",
+        "text": "step1-listPods.md"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "Step 2 - Creating a Pod",
+        "text": "step2-createPod.md"
       }
     ],
     "intro": {
