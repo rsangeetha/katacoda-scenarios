@@ -12,6 +12,10 @@
       {
         "title": "Step 2 - Creating a Pod",
         "text": "step2-createPod.md"
+      },
+	   {
+        "title": "Step 3 - Deploy Access Manager",
+        "text": "step3-deployNAM.md"
       }
     ],
     "intro": {
