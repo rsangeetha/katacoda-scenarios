@@ -19,11 +19,13 @@ Unzip am.tgz
 
 ## Installing the NginX Ingress Controller
 
-```helm repo add stable "https://charts.helm.sh/stable"
+```
+helm repo add stable https://charts.helm.sh/stable
 
 helm repo update
 
-helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true```{{execute}}
+helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true
+```{{execute}}
 
 ## Check Ingress is deployment status
 
@@ -43,6 +45,11 @@ helm install nginx-ingress stable/nginx-ingress --set controller.publishService.
 
 Search for ingress and change the enabled value to true
 
+and also replace below values with right dns
+	`:%s/www.cloudac.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+	`:%s/www.cloudidp.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+	`:%s/www.cloudag.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+	`:wq`{{execute}}
 
 ## Deploy Access Manager using below command and replace the IP address with node01 Internal IP
 
@@ -121,7 +128,7 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 
 	Login to admin console  using admin/novell credentials
 
-	https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps
+	<pre>https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps</pre>
 	
 	Create an IDP cluster ->  DNS should be of <b>[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com<b> and <b> port of 443 </b>
 	
@@ -131,6 +138,6 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 	
 	<B>Access IDP Portal </B>
 	
-	https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal
+	<pre>https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal</pre>
 	
 	Enter admin/novell credential to login
