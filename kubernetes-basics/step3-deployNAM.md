@@ -67,36 +67,37 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 
 
 
-<table width="407">
+<table width="385">
 <tbody>
 <tr>
-<td width="279">NAME</td>
+<td width="257">NAME</td>
 <td width="64">READY</td>
 <td width="64">AGE</td>
 </tr>
 <tr>
 <td>statefulset.apps/access-manager-am-ac</td>
-<td>1-Jan</td>
+<td>1/1</td>
 <td>37m</td>
 </tr>
 <tr>
 <td>statefulset.apps/access-manager-am-ag</td>
-<td>1-Jan</td>
+<td>1/1</td>
 <td>37m</td>
 </tr>
 <tr>
 <td>statefulset.apps/access-manager-am-idp</td>
-<td>1-Jan</td>
+<td>1/1</td>
 <td>37m</td>
 </tr>
 </tbody>
 </table>
 
+<br>
 
-<table width="452">
+<table width="513">
 <tbody>
 <tr>
-<td width="196">NAME</td>
+<td width="257">NAME</td>
 <td width="64">READY</td>
 <td width="64">STATUS</td>
 <td width="64">RESTARTS</td>
@@ -104,28 +105,27 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 </tr>
 <tr>
 <td>pod/access-manager-am-ac-0</td>
-<td>2-Feb</td>
+<td>2/2</td>
 <td>Running</td>
 <td>0</td>
 <td>37m</td>
 </tr>
 <tr>
 <td>pod/access-manager-am-ag-0</td>
-<td>1-Jan</td>
+<td>1/1</td>
 <td>Running</td>
 <td>0</td>
 <td>37m</td>
 </tr>
 <tr>
 <td>pod/access-manager-am-idp-0</td>
-<td>1-Jan</td>
+<td>1/1</td>
 <td>Running</td>
 <td>0</td>
 <td>37m</td>
 </tr>
 </tbody>
 </table>
-
 
 
 ## 	To Access Admin console :
