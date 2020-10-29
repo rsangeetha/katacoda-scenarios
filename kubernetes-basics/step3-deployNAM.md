@@ -19,6 +19,7 @@ Unzip am.tgz
 
 ## Installing the NginX Ingress Controller
 
+
 ```
 helm repo add stable https://charts.helm.sh/stable
 
@@ -26,6 +27,7 @@ helm repo update
 
 helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true
 ```{{execute}}
+
 
 ## Check Ingress is deployment status
 
@@ -46,11 +48,15 @@ helm install nginx-ingress stable/nginx-ingress --set controller.publishService.
 Search for ingress and change the enabled value to true
 
 and also replace below values with right dns
+	<pre>
 	`:%s/www.cloudac.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+	
 	`:%s/www.cloudidp.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+	
 	`:%s/www.cloudag.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+	
 	`:wq`{{execute}}
-
+	</pre>
 ## Deploy Access Manager using below command and replace the IP address with node01 Internal IP
 
 `helm install --namespace nam access-manager access-manager --set global.amconfig.adminConsoleIP=[[HOST2_IP]] --set global.amsecret.adminName=admin --set global.amsecret.adminPassword=novell --set am-ac.node=node01 --set ingress.enabled=true`{{execute}}
