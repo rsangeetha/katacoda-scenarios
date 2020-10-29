@@ -62,7 +62,6 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 <B>The status of the pods should be ready and running as stated below</B>
 
 
-
 <table width="385">
 <tbody>
 <tr>
