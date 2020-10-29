@@ -50,6 +50,7 @@ and also replace below values with right dns
 	`:wq`{{execute}}
 
 
+
 ## Deploy Access Manager using below command and replace the IP address with node01 Internal IP
 
 `helm install --namespace nam access-manager access-manager --set global.amconfig.adminConsoleIP=[[HOST2_IP]] --set global.amsecret.adminName=admin --set global.amsecret.adminPassword=novell --set am-ac.node=node01 --set ingress.enabled=true`{{execute}}
