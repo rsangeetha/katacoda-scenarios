@@ -31,10 +31,11 @@ helm install nginx-ingress stable/nginx-ingress --set controller.publishService.
 
 ## Check Ingress is deployment status
 
+<pre>
 `helm list`{{execute}}
 
-
 `kubectl get all`{{execute}}
+<pre>
 
 ## Create Kubernetes namespace called 'nam' to deploy Access Manager components
 	
