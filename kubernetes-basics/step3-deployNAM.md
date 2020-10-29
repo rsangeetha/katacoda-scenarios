@@ -63,10 +63,8 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 
 `kubectl get statefulset,pods --namespace nam`{{execute}}
 
-The status of the pods should be ready and running as stated below
+<B>The status of the pods should be ready and running as stated below</B>
 
-
-controlplane $ kubectl get statefulset,pods --namespace nam
 
 
 <table width="407">
@@ -95,11 +93,38 @@ controlplane $ kubectl get statefulset,pods --namespace nam
 </table>
 
 
-
-NAME                          READY   STATUS    RESTARTS   AGE
-pod/access-manager-am-ac-0    2/2     Running   0          37m
-pod/access-manager-am-ag-0    1/1     Running   0          37m
-pod/access-manager-am-idp-0   1/1     Running   0          37m
+<table width="452">
+<tbody>
+<tr>
+<td width="196">NAME</td>
+<td width="64">READY</td>
+<td width="64">STATUS</td>
+<td width="64">RESTARTS</td>
+<td width="64">AGE</td>
+</tr>
+<tr>
+<td>pod/access-manager-am-ac-0</td>
+<td>2-Feb</td>
+<td>Running</td>
+<td>0</td>
+<td>37m</td>
+</tr>
+<tr>
+<td>pod/access-manager-am-ag-0</td>
+<td>1-Jan</td>
+<td>Running</td>
+<td>0</td>
+<td>37m</td>
+</tr>
+<tr>
+<td>pod/access-manager-am-idp-0</td>
+<td>1-Jan</td>
+<td>Running</td>
+<td>0</td>
+<td>37m</td>
+</tr>
+</tbody>
+</table>
 
 
 
