@@ -21,7 +21,9 @@ Unzip am.tgz
 
 `helm repo add stable "https://charts.helm.sh/stable"`{{execute}}
 
+
 `helm repo update`{{execute}}
+
 
 `helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true`{{execute}}
 
@@ -65,10 +67,34 @@ The status of the pods should be ready and running as stated below
 
 
 controlplane $ kubectl get statefulset,pods --namespace nam
-NAME                                     READY   AGE
-statefulset.apps/access-manager-am-ac    1/1     37m
-statefulset.apps/access-manager-am-ag    1/1     37m
-statefulset.apps/access-manager-am-idp   1/1     37m
+
+
+<table width="407">
+<tbody>
+<tr>
+<td width="279">NAME</td>
+<td width="64">READY</td>
+<td width="64">AGE</td>
+</tr>
+<tr>
+<td>statefulset.apps/access-manager-am-ac</td>
+<td>1-Jan</td>
+<td>37m</td>
+</tr>
+<tr>
+<td>statefulset.apps/access-manager-am-ag</td>
+<td>1-Jan</td>
+<td>37m</td>
+</tr>
+<tr>
+<td>statefulset.apps/access-manager-am-idp</td>
+<td>1-Jan</td>
+<td>37m</td>
+</tr>
+</tbody>
+</table>
+
+
 
 NAME                          READY   STATUS    RESTARTS   AGE
 pod/access-manager-am-ac-0    2/2     Running   0          37m
