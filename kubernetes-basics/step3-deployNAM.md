@@ -19,13 +19,12 @@ Unzip am.tgz
 
 ## Installing the NginX Ingress Controller
 
-```
-helm repo add stable https://charts.helm.sh/stable
 
-helm repo update
+`helm repo add stable https://charts.helm.sh/stable`{{execute}}
 
-helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true
-```{{execute}}
+`helm repo update`{{execute}}
+
+`helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true`{{execute}}
 
 
 ## Check Ingress is deployment status
@@ -144,7 +143,7 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 
 Login to admin console  using admin/novell credentials
 
-<pre> https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </pre>
+<pre> <a href="https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps"> https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </a> </pre>
 
 Create an IDP cluster ->  DNS should be of <b>[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com<b> and <b> port of 443 </b>
 
