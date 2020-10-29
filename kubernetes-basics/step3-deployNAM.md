@@ -43,13 +43,6 @@ helm install nginx-ingress stable/nginx-ingress --set controller.publishService.
 
 Search for ingress and change the enabled value to true
 
-and also replace below values with right dns
-	`:%s/www.cloudac.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
-	`:%s/www.cloudidp.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
-	`:%s/www.cloudag.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
-	`:wq`{{execute}}
-
-
 
 ## Deploy Access Manager using below command and replace the IP address with node01 Internal IP
 
