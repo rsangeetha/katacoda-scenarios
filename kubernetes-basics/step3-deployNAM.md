@@ -20,18 +20,19 @@ Unzip am.tgz
 ## Installing the NginX Ingress Controller
 
 `helm repo add stable "https://charts.helm.sh/stable"`{{execute}}
+
 `helm repo update`{{execute}}
+
 `helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true`{{execute}}
 
 ## Check Ingress is deployment status
 
-`heml list`{{execute}}
+`helm list`{{execute}}
 `kubectl get all`{{execute}}
 
 ## Create Kubernetes namespace called 'nam' to deploy Access Manager components
 	
 `kubectl create namespace nam`{{execute}}
-
 
 
 ## Update Access Manager Helm Chart Values
