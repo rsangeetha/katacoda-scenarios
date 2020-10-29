@@ -1,0 +1,1 @@
+You have learnt how to deploy NAM in Kubernetes cluster using Helm Chart
