@@ -6,12 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Helm Installation",
+        "text": "step1-Helm.md"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "Deploy Access Manager Helm Chart",
+        "text": "step2-NAMDeploy.md"
       }
     ],
     "intro": {
