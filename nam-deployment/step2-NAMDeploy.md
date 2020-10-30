@@ -13,14 +13,12 @@
 
 Search for ingress and change the enabled value to true 
 
-`:s/enabled: false/enabled: true`{{execute}}
+`:%s/enabled: false/enabled: true`{{execute}}
 
 
 
 and also replace below values with right DNS
 
-
-`:s/enabled: false/enabled: true`{{execute}}
 
 `:%s/www.cloudac.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
@@ -105,20 +103,22 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 </table>
 
 
-## 	To Access Admin console :
+## 	Access Admin console and Create IDP Cluster  :
 
 Login to admin console  using admin/novell credentials
 
 <a href="https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps"> https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </a> 
 
-Create an IDP cluster ->  DNS should be of <b>[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com<b> and <b> port of 443 </b>
+Create an IDP cluster ->  DNS should be of <b>`[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`<b> and <b> port of 443 </b>
 
-for user store use edir of ac, use node01 internal ip [[HOST2_IP]]
+for user store use edir of ac, use node01 internal ip `[[HOST2_IP]]`
 
 Once IDP cluster is created, the IDP cluster status will turn into Greent and Current.
 
+##  Access IDP User Portal
+
 <B>Access IDP Portal </B>
 
- https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal 
+ <a href="https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal">https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal </a> 
 
 Enter admin/novell credential to login
