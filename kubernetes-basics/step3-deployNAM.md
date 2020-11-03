@@ -141,21 +141,12 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 
 Login to admin console  using admin/novell credentials
 
-<a href="https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps"> https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </a> 
-
 <a href="https://[[HOST2_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps"> https://[[HOST2_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </a> 
 
 
+Create an IDP cluster ->  DNS should be of <b>`[[HOST2_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`<b> and <b> port of 443 </b>
 
-
-echo [[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]{{execute}}
-
-echo [[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]{{execute}}
-
-
-Create an IDP cluster ->  DNS should be of <b>`[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`<b> and <b> port of 443 </b>
-
-for user store use edir of ac, use node01 internal ip `[[HOST2_IP]]`
+For user store use edir of ac, use node01 internal ip: `[[HOST2_IP]]`{{copy}}
 
 Once IDP cluster is created, the IDP cluster status will turn into Greent and Current.
 
@@ -163,5 +154,5 @@ Once IDP cluster is created, the IDP cluster status will turn into Greent and Cu
 
 <B>Access IDP Portal </B>
 
- <a href="https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal">https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal </a> 
+ <a href="https://[[HOST2_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal">https://[[HOST2_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal </a> 
 Enter admin/novell credential to login
