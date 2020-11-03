@@ -3,41 +3,41 @@
 
 ## Create Kubernetes namespace called 'nam' to deploy Access Manager components
 	
-`kubectl create namespace nam`{{execute}}
+`kubectl create namespace nam`{{execute HOST1}}
 
 
 ## Update Access Manager Helm Chart Values
 
-`vi access-manager/values.yaml`{{execute}}
+`vi access-manager/values.yaml`{{execute HOST1}}
 
 
 Search for ingress and change the enabled value to true 
 
-`:%s/enabled: false/enabled: true`{{execute}}
+`:%s/enabled: false/enabled: true`{{execute HOST1}}
 
 
 
 and also replace below values with right DNS
 
 
-`:%s/www.cloudac.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+`:%s/www.cloudac.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute HOST1}}
 
-`:%s/www.cloudidp.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+`:%s/www.cloudidp.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute HOST1}}
 
-`:%s/www.cloudag.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+`:%s/www.cloudag.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute HOST1}}
 
-`:wq`{{execute}}
+`:wq`{{execute HOST1}}
 
 
 	
 ## Deploy Access Manager using below command and replace the IP address with node01 Internal IP
 
-`helm install --namespace nam access-manager access-manager --set global.amconfig.adminConsoleIP=[[HOST2_IP]] --set global.amsecret.adminName=admin --set global.amsecret.adminPassword=novell --set am-ac.node=node01 --set ingress.enabled=true`{{execute}}
+`helm install --namespace nam access-manager access-manager --set global.amconfig.adminConsoleIP=[[HOST2_IP]] --set global.amsecret.adminName=admin --set global.amsecret.adminPassword=novell --set am-ac.node=node01 --set ingress.enabled=true`{{execute HOST1}}
 
 
 Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM deployment
 
-`kubectl get statefulset,pods --namespace nam`{{execute}}
+`kubectl get statefulset,pods --namespace nam`{{execute HOST1}}
 
 <b> The status of the pods should be ready and running as stated below </b>
 

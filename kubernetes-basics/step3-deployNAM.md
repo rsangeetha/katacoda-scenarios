@@ -148,14 +148,14 @@ Login to admin console  using admin/novell credentials
 
 
 
-echo [[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]{{execute}}
+`echo [[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]`{{execute}}
 
-echo [[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]{{execute}}
+`echo [[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]`{{execute}}
 
 
 Create an IDP cluster ->  DNS should be of <b>`[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`<b> and <b> port of 443 </b>
 
-for user store use edir of ac, use node01 internal ip `[[HOST2_IP]]`
+for user store use edir of ac, use node01 internal ip `[[HOST2_IP]]`{{copy}}
 
 Once IDP cluster is created, the IDP cluster status will turn into Greent and Current.
 
