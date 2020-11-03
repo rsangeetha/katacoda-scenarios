@@ -1,6 +1,6 @@
 Learn Kubernetes Basic Commands to 
 
-testing.. new changes...
+Verify new changes
 
 - To List all running pods
 - Creating a new pod

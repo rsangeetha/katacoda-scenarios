@@ -19,11 +19,13 @@ Unzip am.tgz
 
 ## Installing the NginX Ingress Controller
 
-```helm repo add stable "https://charts.helm.sh/stable"
+```
+helm repo add stable https://charts.helm.sh/stable
 
 helm repo update
 
-helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true```{{execute}}
+helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true
+```{{execute}}
 
 ## Check Ingress is deployment status
 
