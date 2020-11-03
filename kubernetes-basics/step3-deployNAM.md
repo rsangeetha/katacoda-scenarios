@@ -40,7 +40,9 @@ Unzip am.tgz
 `kubectl create namespace nam`{{execute}}
 
 
-## Update Access Manager Helm Chart Values
+<!-- NEED TO CHECK THE BELOW COMMANDS ARE MANDATORY OR NOT -->
+
+<!-- ## Update Access Manager Helm Chart Values
 
 `vi access-manager/values.yaml`{{execute}}
 
@@ -61,7 +63,7 @@ and also replace below values with right DNS
 `:%s/www.cloudag.com/[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
 `:wq`{{execute}}
-
+-->
 
 	
 ## Deploy Access Manager using below command and replace the IP address with node01 Internal IP
@@ -144,7 +146,7 @@ Login to admin console  using admin/novell credentials
 <a href="https://[[HOST2_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps"> https://[[HOST2_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </a> 
 
 
-Create an IDP cluster ->  DNS should be of <b>`[[HOST2_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`<b> and <b> port of 443 </b>
+Create an IDP cluster ->  DNS should be of <b>`[[HOST2_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{copy}}<b> and <b> port of 443 </b>
 
 For user store use edir of ac, use node01 internal ip: `[[HOST2_IP]]`{{copy}}
 

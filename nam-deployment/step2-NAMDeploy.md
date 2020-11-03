@@ -6,6 +6,9 @@
 `kubectl create namespace nam`{{execute HOST1}}
 
 
+<!-- NEED TO CHECK THE BELOW COMMANDS ARE MANDATORY OR NOT -->
+<!-- 
+
 ## Update Access Manager Helm Chart Values
 
 `vi access-manager/values.yaml`{{execute HOST1}}
@@ -28,7 +31,7 @@ and also replace below values with right DNS
 
 `:wq`{{execute HOST1}}
 
-
+-->
 	
 ## Deploy Access Manager using below command and replace the IP address with node01 Internal IP
 
@@ -107,11 +110,12 @@ Wait for few minutes(Approx 5 to 10 minutes) and watch for the status of NAM dep
 
 Login to admin console  using admin/novell credentials
 
-<a href="https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps"> https://[[HOST_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </a> 
+<a href="https://[[HOST2_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps"> https://[[HOST2_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </a> 
 
-Create an IDP cluster ->  DNS should be of <b>`[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`<b> and <b> port of 443 </b>
 
-for user store use edir of ac, use node01 internal ip `[[HOST2_IP]]`
+Create an IDP cluster ->  DNS should be of <b>`[[HOST2_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{copy}}<b> and <b> port of 443 </b>
+
+For user store use edir of ac, use node01 internal ip: `[[HOST2_IP]]`{{copy}}
 
 Once IDP cluster is created, the IDP cluster status will turn into Greent and Current.
 
@@ -119,6 +123,5 @@ Once IDP cluster is created, the IDP cluster status will turn into Greent and Cu
 
 <B>Access IDP Portal </B>
 
- <a href="https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal">https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal </a> 
-
+ <a href="https://[[HOST2_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal">https://[[HOST2_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/nidp/portal </a> 
 Enter admin/novell credential to login
