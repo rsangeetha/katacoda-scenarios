@@ -2,7 +2,7 @@
   "title": "Deploy Access Manager in Kubernetes Cluster",
   "description": "Step by Step guide to deploy Access Manager in Kubernetes Cluster",
   "difficulty": "Intermediate",
-  "time": "30 minutes",
+  "time": "60 minutes",
   "details": {
     "steps": [
       {

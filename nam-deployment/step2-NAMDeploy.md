@@ -112,6 +112,7 @@ Login to admin console  using admin/novell credentials
 
 <a href="https://[[HOST2_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps"> https://[[HOST2_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </a> 
 
+<a href="https://[[HOST1_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps"> https://[[HOST1_SUBDOMAIN]]-2443-[[KATACODA_HOST]].environments.katacoda.com/nps </a> 
 
 Create an IDP cluster ->  DNS should be of <b>`[[HOST2_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{copy}}<b> and <b> port of 443 </b>
 
